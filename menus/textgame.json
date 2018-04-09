@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle textgame",
-        "command": "textgame:toggle"
+        "label": "Přímá řeč",
+        "command": "textgame:quotes"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "textgame",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "textgame:toggle"
+              "label": "Přímá řeč",
+              "command": "textgame:quotes"
             },
             {
               "label": "Validate",

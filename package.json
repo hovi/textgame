@@ -5,7 +5,8 @@
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "textgame:validate"
+    "atom-workspace": "textgame:validate",
+    "atom-workspace": "textgame:quotes"
   },
   "repository": "https://github.com/atom/textgame",
   "license": "MIT",
