@@ -1,0 +1,30 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle textgame",
+        "command": "textgame:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "textgame",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "textgame:toggle"
+            },
+            {
+              "label": "Validate",
+              "command": "textgame:validate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
