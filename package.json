@@ -1,14 +1,15 @@
 {
   "name": "textgame",
   "main": "./lib/textgame",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "editor for textgame engine",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "textgame:validate",
-    "atom-workspace": "textgame:quotes"
+    "atom-workspace": "textgame:myslenka",
+    "atom-workspace": "textgame:primarec"
   },
-  "repository": "https://github.com/atom/textgame",
+  "repository": "https://github.com/hovi/textgame",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

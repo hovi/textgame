@@ -3,7 +3,11 @@
     "atom-text-editor": [
       {
         "label": "Přímá řeč",
-        "command": "textgame:quotes"
+        "command": "textgame:primarec"
+      },
+      {
+        "label": "Myšlenka",
+        "command": "textgame:myslenka"
       }
     ]
   },
@@ -14,10 +18,6 @@
         {
           "label": "textgame",
           "submenu": [
-            {
-              "label": "Přímá řeč",
-              "command": "textgame:quotes"
-            },
             {
               "label": "Validate",
               "command": "textgame:validate"
