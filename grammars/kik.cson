@@ -1,0 +1,79 @@
+scopeName: 'source.kik' # <scope> should be a short, unique indicator for the language ("js", "php", "c", etc.)
+name: 'kik' # The title that will show up in grammar selection and on your status bar.
+fileTypes: [ # An array of file extensions.
+  'txt'
+  'kik'
+]
+firstLineMatch: 'kapitola=' # A regular expression that is matched against the first line of the document when Atom is trying to decide if the grammar is appropriate. Useful for shell scripts, mostly.
+foldingStartMarker: '' # A regular expression that checks for the start of a foldable area (such as `{`).
+foldingStopMarker: '' # A regular expression that checks for the end of a foldable area (such as `}`). If both folding markers are matched in the same line, there will be no foldable area.
+patterns: [ # An array of individual pattern declarations.
+  {
+    match: '^([a-z]+)=(u[0-9A-Za-z_]*)$' # A regular expression that matches some content. Optional.
+    name: 'uzel' # A period-delimited list of classes that will be applied to the content identified by `match`. Optional.
+    captures: # An array of `name` designations for `match` expressions that capture multiple bits. Optional.
+      0: # Arrays start at zero. This one will catch the whole regex. 1+ will catch the capture groups.
+        name: 'uzel-full' # This should be self-explanatory by now.
+      1:
+        name: "uzel-nazev"
+      2:
+        name: "uzel-hodnota"
+    patterns: [] # This is where you can get tricky. When you have matched content, Atom will search within it for anything in the child array. You can have `patterns[]` within `patterns[]`, then throw an `include` in to jump to some other rule or refer back to the root of the grammar. If you are making a rule that captures a block that might contain other tags, you should refer back to the root. Optional, naturally.
+  },
+  {
+    match: '^([a-z]+)=(h[0-9A-Za-z_]*)$' # A regular expression that matches some content. Optional.
+    name: 'hrana' # A period-delimited list of classes that will be applied to the content identified by `match`. Optional.
+    captures: # An array of `name` designations for `match` expressions that capture multiple bits. Optional.
+      0: # Arrays start at zero. This one will catch the whole regex. 1+ will catch the capture groups.
+        name: 'hrana-full' # This should be self-explanatory by now.
+      1:
+        name: "hrana-nazev"
+      2:
+        name: "hrana-hodnota"
+    patterns: [] # This is where you can get tricky. When you have matched content, Atom will search within it for anything in the child array. You can have `patterns[]` within `patterns[]`, then throw an `include` in to jump to some other rule or refer back to the root of the grammar. If you are making a rule that captures a block that might contain other tags, you should refer back to the root. Optional, naturally.
+  },
+
+  {
+    match: '^([a-z]+)=([0-9A-Za-z_-]*)$' # A regular expression that matches some content. Optional.
+    name: 'parametr-identifikator' # A period-delimited list of classes that will be applied to the content identified by `match`. Optional.
+    captures: # An array of `name` designations for `match` expressions that capture multiple bits. Optional.
+      0: # Arrays start at zero. This one will catch the whole regex. 1+ will catch the capture groups.
+        name: 'identifikator-full' # This should be self-explanatory by now.
+      1:
+        name: "identifikator-nazev"
+      2:
+        name: "identifikator-hodnota"
+    patterns: [] # This is where you can get tricky. When you have matched content, Atom will search within it for anything in the child array. You can have `patterns[]` within `patterns[]`, then throw an `include` in to jump to some other rule or refer back to the root of the grammar. If you are making a rule that captures a block that might contain other tags, you should refer back to the root. Optional, naturally.
+  },
+  {
+    match: '^([a-z]+)=(.*)$' # A regular expression that matches some content. Optional.
+    name: 'parametr' # A period-delimited list of classes that will be applied to the content identified by `match`. Optional.
+    captures: # An array of `name` designations for `match` expressions that capture multiple bits. Optional.
+      0: # Arrays start at zero. This one will catch the whole regex. 1+ will catch the capture groups.
+        name: 'parametr-full' # This should be self-explanatory by now.
+      1:
+        name: "parametr-nazev"
+      2:
+        name: "parametr-hodnota"
+    patterns: [] # This is where you can get tricky. When you have matched content, Atom will search within it for anything in the child array. You can have `patterns[]` within `patterns[]`, then throw an `include` in to jump to some other rule or refer back to the root of the grammar. If you are making a rule that captures a block that might contain other tags, you should refer back to the root. Optional, naturally.
+  },
+  {
+    match: '^----$' # A regular expression that matches some content. Optional.
+    name: 'odrazka' # A period-delimited list of classes that will be applied to the content identified by `match`. Optional.
+    contentName: '' # A period-delimited list of classes that will be applied to the content within `begin` and `end`. Optional.
+    captures: # An array of `name` designations for `match` expressions that capture multiple bits. Optional.
+      0: # Arrays start at zero. This one will catch the whole regex. 1+ will catch the capture groups.
+        name: '' # This should be self-explanatory by now.
+    patterns: [] # This is where you can get tricky. When you have matched content, Atom will search within it for anything in the child array. You can have `patterns[]` within `patterns[]`, then throw an `include` in to jump to some other rule or refer back to the root of the grammar. If you are making a rule that captures a block that might contain other tags, you should refer back to the root. Optional, naturally.
+  }
+]
+repository: # An array of rules. If you're going to be referencing one bit of code over and over again, stick it here so that you can edit all in one place.
+  ruleName: # Can be anything.
+    {
+      name: ''
+      match: ''
+      end: ''
+      endCaptures:
+        0:
+          name: ''
+}
