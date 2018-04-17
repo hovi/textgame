@@ -4,11 +4,6 @@
   "version": "0.0.1",
   "description": "editor for textgame engine",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "textgame:validate",
-    "atom-workspace": "textgame:myslenka",
-    "atom-workspace": "textgame:primarec"
-  },
   "repository": "https://github.com/hovi/textgame",
   "license": "MIT",
   "engines": {
