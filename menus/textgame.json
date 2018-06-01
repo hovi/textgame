@@ -8,6 +8,10 @@
       {
         "label": "Myšlenka",
         "command": "textgame:myslenka"
+      },
+      {
+        "label": "Opravit uvozovky",
+        "command": "textgame:fixQuotes"
       }
     ]
   },
