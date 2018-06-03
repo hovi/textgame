@@ -1,0 +1,11 @@
+{
+  "name": "tg-common",
+  "main": "./tg-common.js",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "kotlin": "^1.2.40"
+  }
+}
