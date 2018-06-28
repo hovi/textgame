@@ -9,7 +9,7 @@ foldingStartMarker: '' # A regular expression that checks for the start of a fol
 foldingStopMarker: '' # A regular expression that checks for the end of a foldable area (such as `}`). If both folding markers are matched in the same line, there will be no foldable area.
 patterns: [ # An array of individual pattern declarations.
   {
-    match: '^(hrana=|->)(h[0-9A-Za-z_]*)?$' # A regular expression that matches some content. Optional.
+    match: '^(hrana=|->)(h[0-9A-Za-z_]*|u[0-9A-Za-z_]*)?$' # A regular expression that matches some content. Optional.
     name: 'hrana' # A period-delimited list of classes that will be applied to the content identified by `match`. Optional.
     captures: # An array of `name` designations for `match` expressions that capture multiple bits. Optional.
       0: # Arrays start at zero. This one will catch the whole regex. 1+ will catch the capture groups.
