@@ -6,6 +6,6 @@
   "keywords": [],
   "license": "MIT",
   "dependencies": {
-    "kotlin": "^1.2.40"
+    "kotlin": "^1.3.61"
   }
 }
