@@ -13,6 +13,7 @@
     "jquery": "^3.3.1",
     "kotlin": "^1.2.40",
     "textgame-core": "file:lib/textgame-core",
-    "tg-common": "file:lib/tg-common"
+    "tg-common": "file:lib/tg-common",
+    "kotlinx-serialization-kotlinx-serialization-runtime": "file:lib/kotlinx-serialization-kotlinx-serialization-runtime"
   }
 }
